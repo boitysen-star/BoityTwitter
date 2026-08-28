@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home / BoityTwitter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.dataset.theme = localStorage.getItem('boity-theme') ||
+      (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  </script>
+</head>
+<body>
+
+  <div class="page">
+    
+    <header class="left-sidebar">
+      <div class="sidebar-top">
+        
+        <a href="index.html" class="logo" title="BoityTwitter">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <nav class="main-nav">
+          <a href="#" class="nav-item active">
+            <i class="bi bi-house-door-fill"></i><span>Home</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="bi bi-search"></i><span>Explore</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="bi bi-bell"></i><span>Notifications</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="bi bi-envelope"></i><span>Messages</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="bi bi-bookmark"></i><span>Bookmarks</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="bi bi-person"></i><span>Profile</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="bi bi-three-dots"></i><span>More</span>
+          </a>
+          <button type="button" class="nav-item theme-toggle" aria-label="Switch to dark mode" aria-pressed="false">
+            <span class="theme-switch" aria-hidden="true"><span class="theme-switch-knob"></span></span>
+            <span class="theme-label">Dark mode</span>
+          </button>
+        </nav>
+        <button class="tweet-btn" data-bs-toggle="modal" data-bs-target="#tweetModal">
+          <span class="tweet-btn-text">Tweet</span>
+          <i class="bi bi-feather tweet-btn-icon"></i>
+        </button>
+      </div>
+
+      <a href="login.html" class="profile-action" title="Account">
+        <img src="assets/IMG_8647.jpg" alt="my avatar" class="avatar">
+        <div class="profile-names">
+          <span class="profile-name">Boitumelo</span>
+          <span class="profile-handle">@Boitumelo_m</span>
+        </div>
+        <i class="bi bi-three-dots"></i>
+      </a>
+    </header>
+
+    <main class="timeline">
+      <div class="timeline-header">
+        <h1>Home</h1>
+        <button class="star-btn" title="Top Tweets">
+          <i class="bi bi-stars"></i>
+        </button>
+      </div>
+
+      <div class="compose">
+        <img src="assets/IMG_8647.jpg" alt="my avatar" class="avatar">
+        <div class="compose-right">
+          <textarea placeholder="What's happening?" rows="2"></textarea>
+          <div class="compose-actions">
+            <div class="compose-icons">
+              <i class="bi bi-image"></i>
+              <i class="bi bi-filetype-gif"></i>
+              <i class="bi bi-bar-chart"></i>
+              <i class="bi bi-emoji-smile"></i>
+              <i class="bi bi-calendar3"></i>
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <button type="button" class="tweet-btn small">Tweet</button>
+          </div>
+        </div>
+      </div>
+
+      <article class="tweet">
+        <img src="https://i.pravatar.cc/48?img=5" alt="avatar" class="avatar">
+        <div class="tweet-body">
+          <div class="tweet-top">
+            <span class="tweet-name">Lucky D</span>
+            <span class="tweet-meta">@Lucky_D &middot; 2h</span>
+          </div>
+          <p>Mzanzi lets make him go viral!</p>
+          <div class="tweet-actions">
+            <button class="action reply" title="Reply"><i class="bi bi-chat"></i><span>48</span></button>
+            <button class="action repost" title="Repost"><i class="bi bi-repeat"></i><span>112</span></button>
+            <button class="action like" title="Like"><i class="bi bi-heart"></i><span>1.2K</span></button>
+            <button class="action views" title="Views"><i class="bi bi-bar-chart"></i><span>20K</span></button>
+            <button class="action bookmark" title="Bookmark"><i class="bi bi-bookmark"></i></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="tweet">
+        <img src="https://i.pravatar.cc/48?img=33" alt="avatar" class="avatar">
+        <div class="tweet-body">
+          <div class="tweet-top">
+            <span class="tweet-name">Sonny</span>
+            <span class="tweet-meta">@Sonny &middot; 5h</span>
+          </div>
+          <p>hot take: give our story more atmosphere with visuals 🔥</p>
+          <div class="tweet-actions">
+            <button class="action reply" title="Reply"><i class="bi bi-chat"></i><span>231</span></button>
+            <button class="action repost" title="Repost"><i class="bi bi-repeat"></i><span>894</span></button>
+            <button class="action like" title="Like"><i class="bi bi-heart"></i><span>5.4K</span></button>
+            <button class="action views" title="Views"><i class="bi bi-bar-chart"></i><span>301K</span></button>
+            <button class="action bookmark" title="Bookmark"><i class="bi bi-bookmark"></i></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="tweet">
+        <img src="https://i.pravatar.cc/48?img=48" alt="avatar" class="avatar">
+        <div class="tweet-body">
+          <div class="tweet-top">
+            <span class="tweet-name">Princeless</span>
+            <span class="tweet-meta">@princeless &middot; 8h</span>
+          </div>
+          <p>The worls is filled with kindness.</p>
+          <div class="tweet-actions">
+            <button class="action reply" title="Reply"><i class="bi bi-chat"></i><span>19</span></button>
+            <button class="action repost" title="Repost"><i class="bi bi-repeat"></i><span>42</span></button>
+            <button class="action like" title="Like"><i class="bi bi-heart"></i><span>318</span></button>
+            <button class="action views" title="Views"><i class="bi bi-bar-chart"></i><span>9.1K</span></button>
+            <button class="action bookmark" title="Bookmark"><i class="bi bi-bookmark"></i></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="tweet">
+        <img src="https://i.pravatar.cc/48?img=20" alt="avatar" class="avatar">
+        <div class="tweet-body">
+          <div class="tweet-top">
+            <span class="tweet-name">Khanyi P</span>
+            <span class="tweet-meta">@khanyi_p &middot; 12h</span>
+          </div>
+          <p>me: haibo Pithc Black afro and Bobo<br>also me, 3 hours later: are they that old now, wow</p>
+          <div class="tweet-actions">
+            <button class="action reply" title="Reply"><i class="bi bi-chat"></i><span>77</span></button>
+            <button class="action repost" title="Repost"><i class="bi bi-repeat"></i><span>260</span></button>
+            <button class="action like" title="Like"><i class="bi bi-heart"></i><span>2.9K</span></button>
+            <button class="action views" title="Views"><i class="bi bi-bar-chart"></i><span>88K</span></button>
+            <button class="action bookmark" title="Bookmark"><i class="bi bi-bookmark"></i></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="tweet">
+        <img src="https://i.pravatar.cc/48?img=68" alt="avatar" class="avatar">
+        <div class="tweet-body">
+          <div class="tweet-top">
+            <span class="tweet-name">Ofentse</span>
+            <span class="tweet-meta">@ofentse &middot; 1d</span>
+          </div>
+          <p>Oh how i miss home.My mom would be treating me with my favorite dishes every evening.</p>
+          <div class="tweet-actions">
+            <button class="action reply" title="Reply"><i class="bi bi-chat"></i><span>12</span></button>
+            <button class="action repost" title="Repost"><i class="bi bi-repeat"></i><span>34</span></button>
+            <button class="action like" title="Like"><i class="bi bi-heart"></i><span>402</span></button>
+            <button class="action views" title="Views"><i class="bi bi-bar-chart"></i><span>15K</span></button>
+            <button class="action bookmark" title="Bookmark"><i class="bi bi-bookmark"></i></button>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <aside class="right-sidebar">
+      <div class="search-box">
+        <input type="text" placeholder="Search BoityTwitter">
+        <button type="button" class="search-btn" title="Search">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+
+      <section class="trends">
+        <h2>Trends for you</h2>
+        <div class="trend">
+          <span class="trend-meta">Trending in South Africa</span>
+          <span class="trend-name">#Kaizer chiefs</span>
+          <span class="trend-count">54.2K Tweets</span>
+        </div>
+        <div class="trend">
+          <span class="trend-meta">Technology &middot; Trending</span>
+          <span class="trend-name">#100DaysOfCode</span>
+          <span class="trend-count">21K Tweets</span>
+        </div>
+        <div class="trend">
+          <span class="trend-meta">Trending</span>
+          <span class="trend-name">Dolly Parton</span>
+          <span class="trend-count">8,431 Tweets</span>
+        </div>
+        <div class="trend">
+          <span class="trend-meta">Sports &middot; Trending</span>
+          <span class="trend-name">BetwayPrem</span>
+          <span class="trend-count">102K Tweets</span>
+        </div>
+        <div class="trend">
+          <span class="trend-meta">Music &middot; Trending</span>
+          <span class="trend-name">#Jolene</span>
+          <span class="trend-count">33.7K Tweets</span>
+        </div>
+        <a href="#" class="show-more">Show more</a>
+      </section>
+
+      <section class="trends">
+        <h2>Who to follow</h2>
+        <div class="follow">
+          <img src="https://i.pravatar.cc/48?img=15" alt="avatar" class="avatar">
+          <div class="profile-names">
+            <span class="profile-name">Social</span>
+            <span class="profile-handle">@chrisxcel</span>
+          </div>
+          <button type="button" class="follow-btn">Follow</button>
+        </div>
+        <div class="follow">
+          <img src="https://i.pravatar.cc/48?img=25" alt="avatar" class="avatar">
+          <div class="profile-names">
+            <span class="profile-name">Newsroom</span>
+            <span class="profile-handle">@newsroom</span>
+          </div>
+          <button type="button" class="follow-btn">Follow</button>
+        </div>
+        <a href="#" class="show-more">Show more</a>
+      </section>
+
+      <footer class="page-footer">
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Ads info</a>
+        <a href="#">More</a>
+        <span>&copy; 2026 BoityTwitter Corp.</span>
+      </footer>
+    </aside>
+
+  </div>
+
+  <div class="modal fade" id="tweetModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content tweet-modal">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="compose">
+            <img src="assets/IMG_8647.jpg" alt="my avatar" class="avatar">
+            <div class="compose-right">
+              <textarea placeholder="What's happening?" rows="4"></textarea>
+              <div class="compose-actions">
+                <div class="compose-icons">
+                  <i class="bi bi-image"></i>
+                  <i class="bi bi-filetype-gif"></i>
+                  <i class="bi bi-bar-chart"></i>
+                  <i class="bi bi-emoji-smile"></i>
+                </div>
+                <button type="button" class="tweet-btn small" data-bs-dismiss="modal">Tweet</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
